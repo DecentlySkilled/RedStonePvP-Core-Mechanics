@@ -1,0 +1,61 @@
+#  ______  _______  _____   _______  _______  _______  _______  _______  ______  ___ ___  ______
+# |   __ \|    ___||     \ |     __||_     _||       ||    |  ||    ___||   __ \|   |   ||   __ \
+# |      <|    ___||  --  ||__     |  |   |  |   -   ||       ||    ___||    __/|   |   ||    __/
+# |___|__||_______||_____/ |_______|  |___|  |_______||__|____||_______||___|    \_____/ |___|
+#DEVELOPER: DecentlySkilled
+#Version: x1.2
+
+# Here you can configure all the settings of RedStonePvP Plugin.
+#-------------------------------------------------------------------------------------------------------------#
+#In-game settings that can be toggled from here:
+Set-Player-GameMode-to-Adventure: true
+Set-Player-Health-To-Max-On-Join: false
+Set-Default-Kit-On-Respawn: true
+
+#You can Enable/Disable Spawn and SetSpawn command(s) by setting this to either true or false:
+Enable-Spawn-Command: true
+Enable-SetSpawn-Command: true
+#-------------------------------------------------------------------------------------------------------------#
+
+#Set the RedStone drop rate here:
+RedStoneDropRate: 1  #(Drop rate is  set to 1 as Default.)
+PriorityRedStoneDropRate: 2  #Extra Drop rate for Players with special Perk/Ranks.
+#(To Enable Priority Drop rate, you have to provide the User with RedStonePvP.prioritydroprate permission.)
+#-------------------------------------------------------------------------------------------------------------#
+
+#You can configure Particles Spawned on Hitting Player here:
+Spawn-RedStone-Particles-On-Hit: true
+RedStone-Particles-On-Hit: 100
+#Note: (To avoid lag, leave the Spawned Particles to its default value.)
+#-------------------------------------------------------------------------------------------------------------#
+
+#Redstone to Gold converter can be Configured here:
+Amount-of-RedStone-to-Gold: 32
+Amount-of-Gold-to-RedStone: 1
+#You can change how much it cost a Player to convert RedStone to Gold.
+Close-Inventory-On-Insufficient-Funds: true
+#Closes Converter inventory on Insufficient Funds.
+#-------------------------------------------------------------------------------------------------------------#
+
+#You can change the Cooldowns of Fix command here:
+Fix-Command-Cooldown: 5 #[Minute(s)]
+Fix-All-Command-Cooldown: 10 #[Minute(s)]
+#(Cooldowns time-units are Set to Minutes by default.)
+#-------------------------------------------------------------------------------------------------------------#
+
+#You can Enable/Disable Trash command here:
+Enable-Trash-Command: true
+#You can set the Size of the in-built Trash inventory here:
+Trash-Inventory-Size: 54 #(Inventory Size number should be a multiple of 9.)
+#-------------------------------------------------------------------------------------------------------------#
+
+#Edit all in-game Messages sent to players here:
+Messages:
+  BlockedCommandMessage: '[&c&lRedStonePvP&f] &cThis Command is disabled via Configuration File!'
+  SetSpawnMessage: '[&c&lRedStonePvP&f] &aSpawn-point set Successfully!'
+  PermissionErrorMessage: '[&c&lRedStonePvP&f] &cYou do not have required Permission to do this!'
+  InsufficientFundErrorMessage: '[&c&lRedStonePvP&f] &cYou do not have sufficient Funds to Initialize this Transaction!'
+  CoolDownMessage: '[&c&lRedStonePvP&f] &cYou must wait for ' #[Fix-Command-Cooldown/Fix-All-Command-Cooldown here.]
+  SuccessfulReapairMessage: '[&c&lRedStonePvP&f]&a Item(s) repaired Successfully!'
+  FlyEnabledMessage: '[&c&lRedStonePvP&f] &aEnabled Flight mode!'
+  DisableFlyMessage: '[&c&lRedStonePvP&f] &cDisabled Flight mode!'

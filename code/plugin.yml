@@ -1,0 +1,11 @@
+name: RedStonePvP
+version: '-x1.0'
+main: me.syanide.redstonepvp.Main
+api-version: 1.16
+description: All in one RedStonePvP plugin!
+commands:
+  Fly:
+  Fix:
+  Trash:
+  RedStonePvP:
+  Spawn:
